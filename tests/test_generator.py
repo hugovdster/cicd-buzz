@@ -1,16 +1,16 @@
 from buzz import generator
 
 def test_sample_single_word():
-    one = ('foo', 'bar', 'foobar')
-    word = generator.sample(l)
-    assert word in one
+    sample = ('foo', 'bar', 'foobar')
+    word = generator.sample(sample)
+    assert word in sample
 
 def test_sample_multiple_words():
-    one = ('foo', 'bar', 'foobar')
-    words = generator.sample(l, 2)
+    sample = ('foo', 'bar', 'foobar')
+    words = generator.sample(sample, 2)
     assert len(words) == 2
-    assert words[0] in one
-    assert words[1] in one
+    assert words[0] in sample
+    assert words[1] in sample
     assert words[0] is not words[1]
 
 def test_generate_buzz_of_at_least_five_words():

@@ -9,7 +9,7 @@ verbs = ('accelerates', 'improves', 'enhances', 'revamps', 'boosts')
 
 def sample(sample, n=1):
     result = random.sample(sample, n)
-    if n==1:
+    if n == 1:
         return result[0]
     return result
 
